@@ -1,0 +1,17 @@
+[program:php-fpm<%= @version %>]
+command = /home/vagrant/app/php-nabe/build/php-<%= @version %>/sbin/php-fpm --nodaemonize
+process_name            = %(program_name)s
+numprocs                = 1
+user                    = vagrant
+
+redirect_stderr         = true
+stdout_logfile          = /var/log/supervisor/%(program_name)s.log
+stdout_logfile_maxbytes = 50MB
+stdout_logfile_backups  = 10
+
+stderr_logfile          = /var/log/supervisor/%(program_name)s.error.log
+stderr_logfile_maxbytes = 50MB
+stderr_logfile_backups  = 10
+
+autostart               = true
+autorestart             = true
