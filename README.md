@@ -18,3 +18,11 @@ $ git clone https://github.com/hamaco/vagrant-php-nabe.git
 $ cd vagrant-php-nabe
 $ vagrant up
 ```
+
+以下のURLでそれぞれのバージョンのPHPが動いてます。
+
+| Version | URL                        |
+| ------- | -------------------------- |
+| 5.3.28  | http://192.168.50.11:8053/ |
+| 5.4.23  | http://192.168.50.11:8054/ |
+| 5.5.7   | http://192.168.50.11:8055/ |
